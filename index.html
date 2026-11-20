@@ -59,6 +59,18 @@
 
 
 
+<link rel="preconnect" href="https://fonts.loli.net">
+
+
+
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Noto+Sans+SC%3Awght%40400%3B700&amp;display=swap">
+
+<link rel="stylesheet" href="https://fonts.loli.net/css2?family=JetBrains+Mono&amp;display=swap">
+
+
+
+<style>:root { --font-sans: "Noto Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; --font-mono: "JetBrains Mono", "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", "Cascadia Code", monospace; }</style>
+
 
 
   
@@ -76,9 +88,9 @@
 </head>
 
 <body
-  class="is-home tag-style-tape bg-style-default"
+  class="is-home has-home-hero is-hero-active tag-style-tape bg-style-default"
   data-default-accent="green"
-  data-code-theme="simple"
+  data-code-theme="sand"
   data-note-style="sticky"
   data-note-icons="on"
   data-button-style="circle"
@@ -92,6 +104,122 @@
       </filter>
     </defs>
   </svg>
+  
+    
+
+<section
+  class="home-hero home-hero--image home-hero--mobile-image home-hero--progressive has-draggable-stickers"
+  aria-label="首页开屏"
+  style="--hero-bg-image: url(&quot;/images/cover/mountain.webp&quot;); --hero-image-overlay-top: rgba(42, 33, 22, 0.25); --hero-image-overlay-bottom: rgba(42, 33, 22, 0.35);"
+  data-hero-images="[&#34;/images/cover/mountain.webp&#34;,&#34;/images/cover/camera.webp&#34;,&#34;/images/cover/notebook.webp&#34;,&#34;/images/cover/port.webp&#34;,&#34;/images/cover/snowman.webp&#34;]"
+>
+  
+    <div class="home-hero__media" aria-hidden="true"></div>
+  
+  
+    <div class="hero-lqip" hidden aria-hidden="true"></div>
+    <script>
+      // The placeholder only earns its keep if it is painted from the first
+      // frame, so it is unhidden here rather than from main.js — and only ever
+      // when JS is running to fade it out again. If main.js never gets to it,
+      // the timeout hides it back so it cannot sit on top of the photo.
+      (function () {
+        var el = document.currentScript && document.currentScript.previousElementSibling;
+        if (!el) return;
+        el.hidden = false;
+        setTimeout(function () {
+          if (!window.flatpaperHeroProgressive) el.hidden = true;
+        }, 2000);
+      })();
+    </script>
+  
+  <div class="home-hero__grain" aria-hidden="true"></div>
+  <div class="home-hero__tools" aria-label="开屏工具">
+    
+      <button class="icon-button home-hero__tool js-hero-shuffle" type="button" aria-label="打乱贴纸位置" title="打乱贴纸位置">
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shuffle flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-shuffle"></use></svg>
+
+      </button>
+    
+    <button class="theme-toggle home-hero__tool" type="button" aria-label="切换颜色模式" title="切换颜色模式">
+      <span class="theme-icon theme-icon--sun">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-sun"></use></svg>
+</span>
+      <span class="theme-icon theme-icon--moon">
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-moon"></use></svg>
+</span>
+    </button>
+  </div>
+  
+    <div class="home-hero__stickers" aria-hidden="true">
+      
+        <button
+          type="button"
+          class="hero-sticker hero-sticker--note"
+          data-hero-sticker="builtin-note"
+          aria-hidden="true"
+          tabindex="-1"
+        ><span>今日</span></button>
+      
+      
+    </div>
+  
+
+  <div class="home-hero__content">
+    <div class="home-hero__profile">
+      
+        <div class="avatar home-hero__avatar" aria-hidden="true">
+          <span></span><i></i><em></em><b></b>
+        </div>
+      
+      <p class="home-hero__eyebrow"><span class="green-dot"></span>记录与分享</p>
+      <h1>一一的博客</h1>
+      
+        <p class="home-hero__bio">保持好奇，持续记录。这里存放我的技术笔记与生活片段。</p>
+      
+      
+      
+        <div class="home-hero__divider" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="56" height="12" viewBox="0 0 56 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 6c3.5-3.5 6.5-3.5 10 0s6.5 3.5 10 0 6.5-3.5 10 0 6.5 3.5 10 0 6.5-3.5 10 0" />
+          </svg>
+        </div>
+      
+      <div class="socials home-hero__links" aria-label="个人链接">
+        
+        
+          
+          
+          <a href="/atom.xml" aria-label="RSS feed" data-tooltip="RSS feed">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rss flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-rss"></use></svg>
+
+          </a>
+        
+      </div>
+    </div>
+  </div>
+  
+    <a
+      class="home-hero__arrow home-hero__arrow--paper"
+      href="#flatpaper-home-content"
+      data-hero-scroll
+      data-cta-preset="01"
+      
+      
+      
+      aria-label="开始阅读"
+      title="开始阅读"
+    >
+      <span class="home-hero__arrow-sticker" aria-hidden="true"></span>
+      <span class="home-hero__arrow-text">开始阅读</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down flatpaper-icon flatpaper-icon--lucide home-hero__arrow-icon" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-chevron-down"></use></svg>
+    </a>
+    
+  
+</section>
+
   
   <header class="site-header">
   
@@ -149,6 +277,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-tag"></use></svg>
 
           <span>标签</span>
+        </a>
+      
+    
+      
+        <a class="site-nav-link " href="/links/">
+          
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-link"></use></svg>
+
+          <span>友链</span>
         </a>
       
     
@@ -212,7 +349,7 @@
 
 
   
-  <main class="paper-shell ">
+  <main id="flatpaper-home-content" class="paper-shell ">
     
 
 <aside id="paper-sidebar-drawer" class="paper-sidebar paper-sidebar--right" aria-label="侧边栏">
@@ -283,6 +420,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tag flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-tag"></use></svg>
 
             <span>标签</span>
+          </a>
+        
+      
+        
+          <a class="" href="/links/">
+            
+<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link flatpaper-icon flatpaper-icon--lucide" aria-hidden="true"><use href="/icons.svg#flatpaper-icon-lucide-link"></use></svg>
+
+            <span>友链</span>
           </a>
         
       
